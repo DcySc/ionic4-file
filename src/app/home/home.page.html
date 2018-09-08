@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            File Test
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-label position="floating">请输入文件名</ion-label>
+        <ion-input [(ngModel)]="name" maxlength="5"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">请输入文件的内容</ion-label>
+        <ion-input [(ngModel)]="text"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="create()">创建</ion-button>
+    <ion-button color="success" (click)="read()">读取</ion-button>
+    <ion-button color="tertiary" (click)="update()">修改</ion-button>
+    <ion-button color="danger" (click)="delete()">删除</ion-button>
+
+</ion-content>
